@@ -1,6 +1,6 @@
 # Reading the Fixed-Width RETURN-A Data
 
- a python notebook that describes and demonstrates one method for reading the data from a fixed-width FBI RETURN-A file. This method is reasonably effective, and could be adapted to a different Fixed-Width file, given an adapted Key-File.
+ a python notebook that describes and demonstrates one method for reading the data from a fixed-width FBI RETURN-A file. The final output is saved as a standard .csv file, with each row representing one agency-year of data. This method is reasonably effective, and could be adapted to a different Fixed-Width file, given an adapted Key-File.
 
 
 
