@@ -5,6 +5,8 @@ import pandas as pd
 #used for moving files around and finding folders
 import os as os
 
+import warnings
+
 #used to output pretty progress bars
 from tqdm import tqdm
 
@@ -27,6 +29,12 @@ if not os.path.exists(newpath1):
 
 if not os.path.exists(newpath2):
     os.makedirs(newpath2)
+
+if(crosswalk_path is None):
+    warnings.warn("ICPSR Crosswalk not found; No STATE, COUNTY, or PLACE fips codes will be attached.")
+    print("ICPSR Crosswalk file can be found at https://www.icpsr.umich.edu/web/ICPSR/studies/35158.")
+    print("Once downloaded, replace \"None\"  at the top of the .py file with the path to the 35158-0001-Data.tsv file.")
+
 
 def read_RETA_file(filepath, keyfile = 'RETURN-A_Keyfile.xlsx', crosswalk_path = None):
     
