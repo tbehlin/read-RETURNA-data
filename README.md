@@ -21,3 +21,9 @@ This process makes use of the pandas .str accessor, and is therefore significant
 Also included is the machinery to merge in the State, County, and Place FIPS codes, using a crosswalk file that can be obtained from  https://www.icpsr.umich.edu/web/ICPSR/studies/35158#.
 
 This file is optional, and the notebook can be run without it.
+
+
+
+# Included Python Script
+
+A python script version is now included. Running this script inplace will search an adjacent RETA_data folder for the necessary files, and read each file into a .csv sequentially.
